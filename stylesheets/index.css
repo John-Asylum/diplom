@@ -1,0 +1,1552 @@
+/* line 1, ../sass/index.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #e5e6e8;
+}
+
+/* line 7, ../sass/index.scss */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background: #292c33;
+}
+/* line 14, ../sass/index.scss */
+.header .sign_out {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'RobotoC', sans-serif;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  background-color: #f26739;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 2px;
+}
+/* line 27, ../sass/index.scss */
+.header .sign_out:hover {
+  background-color: #e2582b;
+}
+/* line 31, ../sass/index.scss */
+.header .search {
+  display: flex;
+}
+/* line 33, ../sass/index.scss */
+.header .search img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 0px 7px 7px 0px;
+  border-left: 1px #bbbaba solid;
+  outline: none;
+  cursor: pointer;
+}
+/* line 43, ../sass/index.scss */
+.header .search .inp_search {
+  width: 200px;
+  height: 25px;
+  border: none;
+  padding: 5px 2px 5px 25px;
+  border-radius: 7px 0 0 7px;
+  margin-left: 100px;
+  outline: none;
+}
+/* line 52, ../sass/index.scss */
+.header .search .btn_search {
+  color: white;
+  cursor: pointer;
+}
+/* line 58, ../sass/index.scss */
+.header img {
+  width: 130px;
+  height: 50px;
+  outline: none;
+  user-select: none;
+}
+/* line 64, ../sass/index.scss */
+.header .admin {
+  width: 35px;
+  height: 35px;
+}
+/* line 69, ../sass/index.scss */
+.header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+/* line 75, ../sass/index.scss */
+.header .menu li {
+  height: 20px;
+  padding: 10px;
+  list-style: none;
+  text-decoration: none;
+}
+/* line 81, ../sass/index.scss */
+.header .menu li a {
+  font-size: 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+}
+/* line 87, ../sass/index.scss */
+.header .menu li a:hover {
+  color: red;
+}
+/* line 94, ../sass/index.scss */
+.header .user {
+  color: white;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding-right: 16px;
+  cursor: pointer;
+}
+/* line 101, ../sass/index.scss */
+.header .user:hover {
+  color: red;
+}
+/* line 105, ../sass/index.scss */
+.header .login2 {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin: 0;
+  padding: 0;
+}
+/* line 112, ../sass/index.scss */
+.header .login2 img {
+  width: 41px;
+  height: 40px;
+  margin-left: 100px;
+}
+/* line 118, ../sass/index.scss */
+.header .login2 .submit {
+  cursor: pointer;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0;
+  color: white;
+}
+/* line 124, ../sass/index.scss */
+.header .login2 .submit:hover {
+  color: red;
+}
+
+/* line 130, ../sass/index.scss */
+.edit_playlist {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(215, 221, 235, 0.8);
+}
+/* line 140, ../sass/index.scss */
+.edit_playlist .close_edit_playlist {
+  border-radius: 5px;
+  margin-right: 25px;
+  cursor: pointer;
+  color: black;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* line 148, ../sass/index.scss */
+.edit_playlist .close_edit_playlist:hover {
+  cursor: pointer;
+  color: red;
+}
+/* line 153, ../sass/index.scss */
+.edit_playlist .form_edit_playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  color: red;
+  box-shadow: 0 0 5px 2px;
+  background: white;
+  margin: auto;
+  margin-top: 100px;
+}
+/* line 164, ../sass/index.scss */
+.edit_playlist .form_edit_playlist .header_edit_playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background: black;
+  border-bottom: 2px solid red;
+}
+/* line 173, ../sass/index.scss */
+.edit_playlist .form_edit_playlist .header_edit_playlist h1 {
+  color: white;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 179, ../sass/index.scss */
+.edit_playlist .form_edit_playlist .field_edit_playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100%;
+}
+/* line 186, ../sass/index.scss */
+.edit_playlist .form_edit_playlist .field_edit_playlist .form_edit_editor {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: auto;
+}
+/* line 192, ../sass/index.scss */
+.edit_playlist .form_edit_playlist .field_edit_playlist .name_edit_playlist {
+  width: 390px;
+  height: 35px;
+  margin: 7px;
+  font-size: 16px;
+  padding-left: 9px;
+}
+/* line 199, ../sass/index.scss */
+.edit_playlist .form_edit_playlist .field_edit_playlist .file_edit_playlist {
+  width: 400px;
+  height: 20px;
+  margin: 7px;
+  font-size: 16px;
+  padding: 10px;
+}
+/* line 207, ../sass/index.scss */
+.edit_playlist .form_edit_playlist .field_edit_playlist .btn_edit_playlist {
+  width: 400px;
+  height: 30px;
+  text-decoration: none;
+  padding-top: 9px;
+  background: #F44336;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 7px;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 221, ../sass/index.scss */
+.edit_playlist .form_edit_playlist .field_edit_playlist .btn_edit_playlist:hover {
+  cursor: pointer;
+  background: red;
+}
+
+/* line 231, ../sass/index.scss */
+.add_playlist {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(215, 221, 235, 0.8);
+}
+/* line 241, ../sass/index.scss */
+.add_playlist .close_playlist {
+  border-radius: 5px;
+  margin-right: 25px;
+  cursor: pointer;
+  color: black;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* line 249, ../sass/index.scss */
+.add_playlist .close_playlist:hover {
+  cursor: pointer;
+  color: red;
+}
+/* line 254, ../sass/index.scss */
+.add_playlist .form_add_playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  color: red;
+  box-shadow: 0 0 5px 2px;
+  background: white;
+  margin: auto;
+  margin-top: 100px;
+}
+/* line 265, ../sass/index.scss */
+.add_playlist .form_add_playlist .header_playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background: black;
+  border-bottom: 2px solid red;
+}
+/* line 274, ../sass/index.scss */
+.add_playlist .form_add_playlist .header_playlist h1 {
+  color: white;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 280, ../sass/index.scss */
+.add_playlist .form_add_playlist .field_playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100%;
+}
+/* line 287, ../sass/index.scss */
+.add_playlist .form_add_playlist .field_playlist .form_editor {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: auto;
+}
+/* line 293, ../sass/index.scss */
+.add_playlist .form_add_playlist .field_playlist .name_playlist {
+  width: 390px;
+  height: 35px;
+  margin: 7px;
+  font-size: 16px;
+  padding-left: 9px;
+}
+/* line 300, ../sass/index.scss */
+.add_playlist .form_add_playlist .field_playlist .file_playlist {
+  width: 400px;
+  height: 20px;
+  margin: 7px;
+  font-size: 16px;
+  padding: 10px;
+}
+/* line 308, ../sass/index.scss */
+.add_playlist .form_add_playlist .field_playlist .btn_adds_playlist {
+  width: 400px;
+  height: 30px;
+  text-decoration: none;
+  padding-top: 9px;
+  background: #F44336;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 7px;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 322, ../sass/index.scss */
+.add_playlist .form_add_playlist .field_playlist .btn_adds_playlist:hover {
+  cursor: pointer;
+  background: red;
+}
+
+/* line 331, ../sass/index.scss */
+.autores {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(215, 221, 235, 0.8);
+}
+/* line 342, ../sass/index.scss */
+.autores .close {
+  border-radius: 5px;
+  margin-right: 25px;
+  cursor: pointer;
+  color: black;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* line 351, ../sass/index.scss */
+.autores .close:hover {
+  cursor: pointer;
+  color: red;
+}
+/* line 356, ../sass/index.scss */
+.autores .avtor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+  height: 500px;
+  color: red;
+  box-shadow: 0 0 5px 2px;
+  background: white;
+  margin: auto;
+  margin-top: 100px;
+}
+/* line 367, ../sass/index.scss */
+.autores .avtor .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: black;
+  border-bottom: 2px solid red;
+}
+/* line 375, ../sass/index.scss */
+.autores .avtor .form h1 {
+  color: white;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 380, ../sass/index.scss */
+.autores .avtor .form h2 {
+  color: white;
+  font-size: 20px;
+}
+/* line 385, ../sass/index.scss */
+.autores .avtor .form2 {
+  margin-top: 20px;
+}
+/* line 388, ../sass/index.scss */
+.autores .avtor .form2 .input {
+  width: 200px;
+  height: 20px;
+  margin: 7px;
+  font-size: 16px;
+  padding: 10px;
+}
+/* line 395, ../sass/index.scss */
+.autores .avtor .form2 .form1 {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+/* line 399, ../sass/index.scss */
+.autores .avtor .form2 .form1 p {
+  color: black;
+}
+/* line 402, ../sass/index.scss */
+.autores .avtor .form2 .form1 .reg {
+  margin-left: 5px;
+  color: red;
+  text-decoration: none;
+}
+/* line 406, ../sass/index.scss */
+.autores .avtor .form2 .form1 .reg:hover {
+  box-shadow: 0px -2px 0 black inset;
+}
+/* line 412, ../sass/index.scss */
+.autores .avtor .form2 .buttons {
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  padding-top: 9px;
+  background: #F44336;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 7px;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 426, ../sass/index.scss */
+.autores .avtor .form2 .buttons:hover {
+  cursor: pointer;
+  background: red;
+}
+/* line 434, ../sass/index.scss */
+.autores .reg1 {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 325px;
+  height: 500px;
+  color: red;
+  box-shadow: 0 0 5px 2px;
+  background: white;
+  margin: auto;
+  margin-top: 100px;
+}
+/* line 446, ../sass/index.scss */
+.autores .reg1 .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: black;
+  border-bottom: 2px solid red;
+}
+/* line 454, ../sass/index.scss */
+.autores .reg1 .block h1 {
+  color: white;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 459, ../sass/index.scss */
+.autores .reg1 .block h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+/* line 466, ../sass/index.scss */
+.autores .reg1 .block2 {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+/* line 470, ../sass/index.scss */
+.autores .reg1 .block2 p {
+  color: black;
+}
+/* line 473, ../sass/index.scss */
+.autores .reg1 .block2 .avt {
+  color: red;
+  text-decoration: none;
+}
+/* line 476, ../sass/index.scss */
+.autores .reg1 .block2 .avt:hover {
+  box-shadow: 0px -2px 0 black inset;
+}
+/* line 482, ../sass/index.scss */
+.autores .reg1 .block1 {
+  margin-top: 20px;
+}
+/* line 485, ../sass/index.scss */
+.autores .reg1 .block1 .pole {
+  width: 200px;
+  height: 20px;
+  margin: 7px;
+  font-size: 16px;
+  padding: 10px;
+}
+/* line 492, ../sass/index.scss */
+.autores .reg1 .block1 .buttons {
+  width: 170px;
+  height: 30px;
+  text-decoration: none;
+  padding-top: 9px;
+  background: #F44336;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 10px auto;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 506, ../sass/index.scss */
+.autores .reg1 .block1 .buttons:hover {
+  cursor: pointer;
+  background: red;
+}
+
+/* line 516, ../sass/index.scss */
+.content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 521, ../sass/index.scss */
+.content1 .pleer {
+  display: flex;
+  justify-content: center;
+}
+/* line 524, ../sass/index.scss */
+.content1 .pleer .pleer1 {
+  width: 900px;
+  height: 600px;
+  background: black;
+}
+/* line 530, ../sass/index.scss */
+.content1 .slayder {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 360px;
+  background-image: url(../images/fon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* line 543, ../sass/index.scss */
+.content1 .slayder .newinki {
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+}
+/* line 548, ../sass/index.scss */
+.content1 .slayder .owl-theme {
+  width: 1058px;
+  position: relative;
+  z-index: 1;
+}
+/* line 552, ../sass/index.scss */
+.content1 .slayder .owl-theme .owl-nav {
+  display: none;
+}
+/* line 555, ../sass/index.scss */
+.content1 .slayder .owl-theme .owl-dots {
+  display: block;
+  overflow: unset;
+}
+/* line 559, ../sass/index.scss */
+.content1 .slayder .owl-theme .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 250px;
+  margin: 10px;
+  background: #00000038;
+}
+/* line 568, ../sass/index.scss */
+.content1 .slayder .owl-theme .item:hover {
+  background: white;
+}
+/* line 570, ../sass/index.scss */
+.content1 .slayder .owl-theme .item:hover h1 {
+  color: black;
+}
+/* line 574, ../sass/index.scss */
+.content1 .slayder .owl-theme .item img {
+  display: block;
+  width: 165px;
+  height: 211px;
+}
+/* line 579, ../sass/index.scss */
+.content1 .slayder .owl-theme .item a {
+  text-decoration: none;
+}
+/* line 582, ../sass/index.scss */
+.content1 .slayder .owl-theme .item h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  width: 185px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+/* line 596, ../sass/index.scss */
+.content1 .content {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 1200px;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+}
+/* line 604, ../sass/index.scss */
+.content1 .content .film_playlist {
+  display: block;
+}
+/* line 606, ../sass/index.scss */
+.content1 .content .film_playlist .title_info {
+  display: flex;
+  align-items: center;
+}
+/* line 609, ../sass/index.scss */
+.content1 .content .film_playlist .title_info p {
+  font: normal 24px 'RobotoC', sans-serif;
+  color: #292c33;
+  padding: 0;
+  margin: 0;
+}
+/* line 617, ../sass/index.scss */
+.content1 .content .inform_playlist {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 622, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_titles {
+  display: flex;
+}
+/* line 624, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_titles p {
+  font: normal 25px 'RobotoC', sans-serif;
+  color: #292c33;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+/* line 631, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_titles span {
+  font: normal 25px 'RobotoC', sans-serif;
+  color: #292c33;
+}
+/* line 636, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content {
+  display: flex;
+}
+/* line 638, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_img {
+  display: flex;
+  flex-direction: column;
+}
+/* line 641, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_img img {
+  width: 177px;
+  height: 250px;
+}
+/* line 646, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  width: 100%;
+}
+/* line 651, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* line 655, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .date {
+  margin: 0;
+  color: #292c33;
+}
+/* line 658, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .date span {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c337d;
+}
+/* line 665, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .text {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 670, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .text span {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c337d;
+}
+/* line 677, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .info_count {
+  display: flex;
+  align-items: center;
+}
+/* line 680, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .info_count .bottom_info {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: #0000008a;
+  margin: 0px;
+  padding: 2px;
+  border-radius: 16px;
+}
+/* line 689, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .info_count .bottom_info p {
+  margin: 0;
+  color: white;
+  margin-left: 4px;
+}
+/* line 694, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .info_count .bottom_info img {
+  width: 35px;
+  height: 35px;
+}
+/* line 698, ../sass/index.scss */
+.content1 .content .inform_playlist .inform_content .inform_block .block_infos .info_count .bottom_info .sum {
+  font-size: 20px;
+  margin-left: 7px;
+  color: white;
+  margin-right: 6px;
+}
+/* line 711, ../sass/index.scss */
+.content1 .content .block_search .zag_search {
+  border-bottom: 1px #bbbaba solid;
+  padding-bottom: 14px;
+}
+/* line 714, ../sass/index.scss */
+.content1 .content .block_search .zag_search span {
+  font-size: 25px;
+  color: black;
+  font-family: sans-serif;
+}
+/* line 722, ../sass/index.scss */
+.content1 .content .playlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #bbbaba;
+}
+/* line 728, ../sass/index.scss */
+.content1 .content .playlist .playlist_count {
+  display: flex;
+  align-items: center;
+}
+/* line 731, ../sass/index.scss */
+.content1 .content .playlist .playlist_count p {
+  font: normal 24px 'RobotoC', sans-serif;
+  color: #292c33;
+  padding: 0;
+  margin: 0;
+}
+/* line 737, ../sass/index.scss */
+.content1 .content .playlist .playlist_count .sum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background: #292c33;
+  border-radius: 30px;
+}
+/* line 750, ../sass/index.scss */
+.content1 .content .playlist .btn_add_playlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 30px;
+  color: white;
+  background-color: #f26739;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'RobotoC', sans-serif;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/* line 764, ../sass/index.scss */
+.content1 .content .playlist .btn_add_playlist:hover {
+  background-color: #e2582b;
+}
+/* line 769, ../sass/index.scss */
+.content1 .content .playlist_content {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #bbbaba;
+}
+/* line 773, ../sass/index.scss */
+.content1 .content .playlist_content .content_img {
+  display: flex;
+  flex-direction: column;
+}
+/* line 776, ../sass/index.scss */
+.content1 .content .playlist_content .content_img img {
+  width: 177px;
+  height: 250px;
+}
+/* line 780, ../sass/index.scss */
+.content1 .content .playlist_content .content_img .btn_open_playlist {
+  width: 177px;
+  display: inline-flex;
+  height: 33px;
+  color: white;
+  background: #f26739;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  justify-content: center;
+}
+/* line 791, ../sass/index.scss */
+.content1 .content .playlist_content .content_img .btn_open_playlist:hover {
+  background-color: #e2582b;
+}
+/* line 796, ../sass/index.scss */
+.content1 .content .playlist_content .content_block {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  width: 100%;
+}
+/* line 802, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .playlist_edite img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+/* line 808, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* line 812, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .info_count {
+  display: flex;
+  align-items: center;
+}
+/* line 815, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .info_count .bottom_info {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+}
+/* line 820, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .info_count .bottom_info img {
+  width: 35px;
+  height: 35px;
+}
+/* line 824, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .info_count .bottom_info .sum {
+  font-size: 20px;
+  margin-left: 7px;
+}
+/* line 831, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .title {
+  margin: 0;
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 837, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .date {
+  margin: 0;
+  color: #292c33;
+}
+/* line 840, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .date span {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c337d;
+}
+/* line 847, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .text {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 852, ../sass/index.scss */
+.content1 .content .playlist_content .content_block .block_info .text span {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c337d;
+}
+/* line 864, ../sass/index.scss */
+.content1 .content .block_news {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 871, ../sass/index.scss */
+.content1 .content .block_news h3 {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+/* line 878, ../sass/index.scss */
+.content1 .content .block_news .image img {
+  width: 900px;
+  height: 600px;
+}
+/* line 883, ../sass/index.scss */
+.content1 .content .block_news p {
+  width: 900px;
+  line-height: 1.8em;
+  font-size: 17px;
+  letter-spacing: 0;
+  text-align: -webkit-auto;
+  text-indent: 45px;
+  font-family: sans-serif;
+}
+/* line 892, ../sass/index.scss */
+.content1 .content .block_news .import {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+/* line 897, ../sass/index.scss */
+.content1 .content .block_news .import .import_icon {
+  display: flex;
+}
+/* line 899, ../sass/index.scss */
+.content1 .content .block_news .import .import_icon .import_zag {
+  margin-right: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+/* line 905, ../sass/index.scss */
+.content1 .content .block_news .import .import_img {
+  display: flex;
+  align-items: center;
+}
+/* line 908, ../sass/index.scss */
+.content1 .content .block_news .import .import_img img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+/* line 918, ../sass/index.scss */
+.content1 .content .news_coment span {
+  font-size: 25px;
+  color: black;
+  font-family: sans-serif;
+}
+/* line 923, ../sass/index.scss */
+.content1 .content .news_coment .btn_news_coment {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px #bbbaba solid;
+  font-size: 20px;
+}
+/* line 930, ../sass/index.scss */
+.content1 .content .news_coment .btn_news_coment:hover {
+  color: red;
+}
+/* line 934, ../sass/index.scss */
+.content1 .content .news_coment .news_message {
+  border: 2px solid #0000002b;
+  border-radius: 10px;
+  width: auto;
+  padding: 20px;
+  position: relative;
+  margin: 10px;
+}
+/* line 941, ../sass/index.scss */
+.content1 .content .news_coment .news_message:after {
+  left: -20px;
+  top: 9px;
+  border: 9px solid transparent;
+  border-right-color: #15151530;
+  position: absolute;
+  bottom: 100%;
+  content: '';
+}
+/* line 950, ../sass/index.scss */
+.content1 .content .news_coment .news_message .messega_author {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 23px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 957, ../sass/index.scss */
+.content1 .content .news_coment .news_message .messega_author .aut {
+  margin: 0;
+  font-size: 23px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33b5;
+}
+/* line 964, ../sass/index.scss */
+.content1 .content .news_coment .news_message .dt {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 971, ../sass/index.scss */
+.content1 .content .news_coment .news_message .dt .date_mess {
+  margin: 0;
+  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33b5;
+}
+/* line 978, ../sass/index.scss */
+.content1 .content .news_coment .news_message .message_text {
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 982, ../sass/index.scss */
+.content1 .content .news_coment .news_message .message_text .mess_text {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33b5;
+}
+/* line 992, ../sass/index.scss */
+.content1 .content .coment {
+  border-bottom: 1px solid #cac3c3;
+}
+/* line 994, ../sass/index.scss */
+.content1 .content .coment .name {
+  border-bottom: 1px solid #cac3c3;
+  margin: 0;
+  padding: 10px;
+}
+/* line 998, ../sass/index.scss */
+.content1 .content .coment .name span {
+  padding: 27px;
+}
+/* line 1002, ../sass/index.scss */
+.content1 .content .coment .coment_block {
+  padding: 27px;
+  border-bottom: 1px solid #cac3c3;
+}
+/* line 1005, ../sass/index.scss */
+.content1 .content .coment .coment_block .btn_coment {
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 1009, ../sass/index.scss */
+.content1 .content .coment .coment_block .btn_coment {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+}
+/* line 1015, ../sass/index.scss */
+.content1 .content .coment .coment_block .btn_coment:hover {
+  color: red;
+}
+/* line 1020, ../sass/index.scss */
+.content1 .content .coment .coment_message {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 1025, ../sass/index.scss */
+.content1 .content .coment .coment_message .information {
+  border: 2px solid #0000002b;
+  border-radius: 10px;
+  width: auto;
+  padding: 20px;
+  position: relative;
+  margin: 10px;
+}
+/* line 1032, ../sass/index.scss */
+.content1 .content .coment .coment_message .information:after {
+  left: -20px;
+  top: 9px;
+  border: 9px solid transparent;
+  border-right-color: #15151530;
+  position: absolute;
+  bottom: 100%;
+  content: '';
+}
+/* line 1041, ../sass/index.scss */
+.content1 .content .coment .coment_message .information .coment_film_user {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 23px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 1048, ../sass/index.scss */
+.content1 .content .coment .coment_message .information .coment_film_user .aut_film_mes {
+  margin: 0;
+  font-size: 23px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33b5;
+}
+/* line 1055, ../sass/index.scss */
+.content1 .content .coment .coment_message .information .coment_film_date {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 1062, ../sass/index.scss */
+.content1 .content .coment .coment_message .information .coment_film_date .date_film_mes {
+  margin: 0;
+  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33b5;
+}
+/* line 1069, ../sass/index.scss */
+.content1 .content .coment .coment_message .information .coment_film_message {
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33;
+}
+/* line 1073, ../sass/index.scss */
+.content1 .content .coment .coment_message .information .coment_film_message .coment_mes_text {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Roboto Slab', serif;
+  color: #292c33b5;
+}
+/* line 1085, ../sass/index.scss */
+.content1 .content .zag p {
+  font-size: 25px;
+  color: black;
+  font-family: sans-serif;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 1092, ../sass/index.scss */
+.content1 .content .news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 1097, ../sass/index.scss */
+.content1 .content .baha1493 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 17px 2%;
+  min-width: 250px;
+  max-width: 290px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+/* line 1113, ../sass/index.scss */
+.content1 .content .baha1493 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 1118, ../sass/index.scss */
+.content1 .content .baha1493:after {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 25px;
+  border-color: transparent transparent transparent #d2652d;
+  content: '';
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 1134, ../sass/index.scss */
+.content1 .content .baha1493 img {
+  height: 180px;
+  width: 290px;
+  vertical-align: top;
+  position: relative;
+}
+/* line 1141, ../sass/index.scss */
+.content1 .content .baha1493 figcaption {
+  padding: 20px 20px 30px;
+  background-color: #b1acac;
+  border-radius: 0 0 7px 7px;
+  height: 200px;
+}
+/* line 1147, ../sass/index.scss */
+.content1 .content .figcaption_icon {
+  display: flex;
+}
+/* line 1149, ../sass/index.scss */
+.content1 .content .figcaption_icon .figcaption_likes {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+/* line 1155, ../sass/index.scss */
+.content1 .content .figcaption_icon .figcaption_likes img {
+  width: 20px;
+  height: 20px;
+}
+/* line 1160, ../sass/index.scss */
+.content1 .content .figcaption_icon .figcaption_mes {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+  margin-left: 34px;
+}
+/* line 1167, ../sass/index.scss */
+.content1 .content .figcaption_icon .figcaption_mes img {
+  width: 20px;
+  height: 20px;
+}
+/* line 1173, ../sass/index.scss */
+.content1 .content .baha1493 .date {
+  background-color: #d2652d;
+  top: 15px;
+  color: #fff;
+  right: 15px;
+  min-height: 48px;
+  min-width: 48px;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 50%;
+  padding: 10px 0;
+}
+/* line 1189, ../sass/index.scss */
+.content1 .content .baha1493 .date span {
+  display: block;
+  line-height: 14px;
+}
+/* line 1194, ../sass/index.scss */
+.content1 .content .baha1493 .date .month {
+  font-size: 11px;
+}
+/* line 1198, ../sass/index.scss */
+.content1 .content .baha1493 h3,
+.content1 .content .baha1493 p {
+  margin: 0;
+  padding: 0;
+}
+/* line 1204, ../sass/index.scss */
+.content1 .content .baha1493 h3 {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 700;
+}
+/* line 1210, ../sass/index.scss */
+.content1 .content .baha1493 p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+}
+/* line 1214, ../sass/index.scss */
+.content1 .content .baha1493:hover:after,
+.content1 .content .baha1493.hover:after {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 1219, ../sass/index.scss */
+.content1 .content .empty_block {
+  width: 290px;
+  height: 1px;
+  margin: 17px 2%;
+}
+/* line 1224, ../sass/index.scss */
+.content1 .content .filter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 1230, ../sass/index.scss */
+.content1 .content .filter span {
+  font: normal 25px 'RobotoC', sans-serif;
+  color: #292c33;
+  margin-bottom: 10px;
+}
+/* line 1237, ../sass/index.scss */
+.content1 .content .filter .filter_block .form-control {
+  width: 350px;
+  height: 35px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  background: transparent;
+}
+/* line 1246, ../sass/index.scss */
+.content1 .content .filter .end_filter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 1250, ../sass/index.scss */
+.content1 .content .filter .end_filter .btn_filter {
+  width: 177px;
+  display: inline-flex;
+  height: 33px;
+  color: white;
+  background: #f26739;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+/* line 1264, ../sass/index.scss */
+.content1 .content .filter .end_filter .btn_filter:hover {
+  background-color: #e2582b;
+}
+/* line 1271, ../sass/index.scss */
+.content1 .content .film {
+  display: flex;
+  height: 300px;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 1275, ../sass/index.scss */
+.content1 .content .film .prosmotr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 1279, ../sass/index.scss */
+.content1 .content .film .prosmotr .view {
+  width: 185px;
+  display: inline-flex;
+  height: 33px;
+  color: white;
+  background: red;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+  justify-content: center;
+}
+/* line 1291, ../sass/index.scss */
+.content1 .content .film .prosmotr img {
+  width: 185px;
+  height: 250px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+/* line 1299, ../sass/index.scss */
+.content1 .content .film .other {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* line 1303, ../sass/index.scss */
+.content1 .content .film .other .count_film_icon {
+  display: flex;
+  bottom: 0;
+  position: absolute;
+}
+/* line 1307, ../sass/index.scss */
+.content1 .content .film .other .count_film_icon .like_film_icon {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+/* line 1311, ../sass/index.scss */
+.content1 .content .film .other .count_film_icon .like_film_icon img {
+  width: 25px;
+  height: 25px;
+}
+/* line 1316, ../sass/index.scss */
+.content1 .content .film .other .count_film_icon .mess_film_icon {
+  display: flex;
+  align-items: center;
+}
+/* line 1319, ../sass/index.scss */
+.content1 .content .film .other .count_film_icon .mess_film_icon img {
+  width: 25px;
+  height: 25px;
+}
+/* line 1325, ../sass/index.scss */
+.content1 .content .film .other span {
+  font-size: 18px;
+  color: #8f95a3;
+  font-family: 'Roboto Slab', serif;
+}
+/* line 1330, ../sass/index.scss */
+.content1 .content .film .other h1 {
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  margin: 5px;
+}
+/* line 1335, ../sass/index.scss */
+.content1 .content .film .other p {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+/* line 1342, ../sass/index.scss */
+.content1 .content .player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 1349, ../sass/index.scss */
+.content1 .content .fullfilm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 1353, ../sass/index.scss */
+.content1 .content .fullfilm .full {
+  display: flex;
+  width: 1200px;
+  height: auto;
+}
+/* line 1357, ../sass/index.scss */
+.content1 .content .fullfilm .full .imgbuttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 1361, ../sass/index.scss */
+.content1 .content .fullfilm .full .imgbuttons img {
+  width: 280px;
+  height: 400px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+/* line 1370, ../sass/index.scss */
+.content1 .content .fullfilm .full .opisanie {
+  display: flex;
+  flex-direction: column;
+}
+/* line 1373, ../sass/index.scss */
+.content1 .content .fullfilm .full .opisanie span {
+  font-size: 18px;
+  color: #8f95a3;
+  font-family: 'Roboto Slab', serif;
+}
+/* line 1378, ../sass/index.scss */
+.content1 .content .fullfilm .full .opisanie h1 {
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  margin: 5px;
+}
+/* line 1383, ../sass/index.scss */
+.content1 .content .fullfilm .full .opisanie p {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}

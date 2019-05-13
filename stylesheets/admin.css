@@ -1,0 +1,1101 @@
+/* line 1, ../sass/admin.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #e5e6e8;
+}
+
+/* line 6, ../sass/admin.scss */
+.floating_form {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(215, 221, 235, 0.8);
+}
+/* line 16, ../sass/admin.scss */
+.floating_form .close_floating {
+  border-radius: 5px;
+  margin-right: 25px;
+  cursor: pointer;
+  color: black;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+/* line 24, ../sass/admin.scss */
+.floating_form .close_floating:hover {
+  cursor: pointer;
+  color: red;
+}
+/* line 29, ../sass/admin.scss */
+.floating_form .form_add_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+  height: 500px;
+  color: red;
+  box-shadow: 0 0 5px 2px;
+  background: white;
+  margin: auto;
+  margin-top: 100px;
+}
+/* line 40, ../sass/admin.scss */
+.floating_form .form_add_user .header_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background: black;
+  border-bottom: 2px solid red;
+}
+/* line 49, ../sass/admin.scss */
+.floating_form .form_add_user .header_form h1 {
+  color: white;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 54, ../sass/admin.scss */
+.floating_form .form_add_user .header_form h2 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+/* line 63, ../sass/admin.scss */
+.floating_form .form_add_user .footer_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* line 70, ../sass/admin.scss */
+.floating_form .form_add_user .footer_form input {
+  width: 200px;
+  height: 20px;
+  margin: 7px;
+  font-size: 16px;
+  padding: 10px;
+}
+/* line 77, ../sass/admin.scss */
+.floating_form .form_add_user .footer_form .buttons_form_add {
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  padding-top: 9px;
+  background: #F44336;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 7px;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 91, ../sass/admin.scss */
+.floating_form .form_add_user .footer_form .buttons_form_add:hover {
+  cursor: pointer;
+  background: red;
+}
+
+/* line 99, ../sass/admin.scss */
+.warning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+}
+/* line 108, ../sass/admin.scss */
+.warning p {
+  color: yellow;
+  font-size: 40px;
+  margin: 10px;
+}
+/* line 113, ../sass/admin.scss */
+.warning span {
+  color: white;
+  font-size: 21px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px;
+}
+/* line 120, ../sass/admin.scss */
+.warning .warning_back {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+/* line 126, ../sass/admin.scss */
+.warning .warning_back:hover {
+  color: red;
+}
+
+/* line 131, ../sass/admin.scss */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background: #292c33;
+}
+/* line 138, ../sass/admin.scss */
+.header p {
+  color: white;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 35px;
+}
+/* line 144, ../sass/admin.scss */
+.header .back {
+  color: white;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 151, ../sass/admin.scss */
+.header .back:hover {
+  color: red;
+}
+
+/* line 156, ../sass/admin.scss */
+.content {
+  display: flex;
+  height: 100%;
+}
+/* line 159, ../sass/admin.scss */
+.content .content1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background: #eceaea;
+}
+/* line 168, ../sass/admin.scss */
+.content .menu {
+  display: block;
+  width: 260px;
+  background-color: #292c33;
+  border-top: 1px solid white;
+}
+/* line 173, ../sass/admin.scss */
+.content .menu .new {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: 0;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 181, ../sass/admin.scss */
+.content .menu .new:hover {
+  background-color: red;
+}
+/* line 184, ../sass/admin.scss */
+.content .menu .new img {
+  width: 30px;
+  height: 30px;
+}
+/* line 188, ../sass/admin.scss */
+.content .menu .new p {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+/* line 194, ../sass/admin.scss */
+.content .menu .film {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: 0;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 202, ../sass/admin.scss */
+.content .menu .film:hover {
+  background-color: red;
+}
+/* line 205, ../sass/admin.scss */
+.content .menu .film img {
+  width: 30px;
+  height: 30px;
+}
+/* line 209, ../sass/admin.scss */
+.content .menu .film p {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+/* line 215, ../sass/admin.scss */
+.content .menu .news {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: 0;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 223, ../sass/admin.scss */
+.content .menu .news:hover {
+  background-color: red;
+}
+/* line 226, ../sass/admin.scss */
+.content .menu .news img {
+  width: 27px;
+  height: 27px;
+}
+/* line 230, ../sass/admin.scss */
+.content .menu .news p {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+/* line 236, ../sass/admin.scss */
+.content .menu .top {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: 0;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 244, ../sass/admin.scss */
+.content .menu .top:hover {
+  background-color: red;
+}
+/* line 247, ../sass/admin.scss */
+.content .menu .top img {
+  width: 27px;
+  height: 27px;
+}
+/* line 251, ../sass/admin.scss */
+.content .menu .top p {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+/* line 257, ../sass/admin.scss */
+.content .menu .user {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: 0;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 265, ../sass/admin.scss */
+.content .menu .user:hover {
+  background-color: red;
+}
+/* line 268, ../sass/admin.scss */
+.content .menu .user img {
+  width: 27px;
+  height: 27px;
+}
+/* line 272, ../sass/admin.scss */
+.content .menu .user p {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+/* line 284, ../sass/admin.scss */
+.content .add_new_film {
+  display: flex;
+  flex-direction: column;
+}
+/* line 287, ../sass/admin.scss */
+.content .add_new_film .header_new_film {
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 293, ../sass/admin.scss */
+.content .add_new_film .field_new_film {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+/* line 297, ../sass/admin.scss */
+.content .add_new_film .field_new_film .name_newfilm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+/* line 301, ../sass/admin.scss */
+.content .add_new_film .field_new_film .name_newfilm span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+}
+/* line 307, ../sass/admin.scss */
+.content .add_new_film .field_new_film .name_newfilm .name_new_film {
+  width: 500px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+  padding-left: 9px;
+}
+/* line 315, ../sass/admin.scss */
+.content .add_new_film .field_new_film .year_newfilm {
+  display: flex;
+  flex-direction: column;
+}
+/* line 318, ../sass/admin.scss */
+.content .add_new_film .field_new_film .year_newfilm span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+}
+/* line 324, ../sass/admin.scss */
+.content .add_new_film .field_new_film .year_newfilm .year {
+  width: 515px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+}
+/* line 331, ../sass/admin.scss */
+.content .add_new_film .field_new_film .country_newfilm {
+  display: flex;
+  flex-direction: column;
+}
+/* line 334, ../sass/admin.scss */
+.content .add_new_film .field_new_film .country_newfilm span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+}
+/* line 340, ../sass/admin.scss */
+.content .add_new_film .field_new_film .country_newfilm .country {
+  width: 515px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+}
+/* line 347, ../sass/admin.scss */
+.content .add_new_film .field_new_film .actor_newfilm {
+  display: flex;
+  flex-direction: column;
+}
+/* line 350, ../sass/admin.scss */
+.content .add_new_film .field_new_film .actor_newfilm span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+}
+/* line 356, ../sass/admin.scss */
+.content .add_new_film .field_new_film .actor_newfilm .actor_new_film {
+  width: 500px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+  padding-left: 9px;
+}
+/* line 364, ../sass/admin.scss */
+.content .add_new_film .field_new_film .janr_newfilm {
+  display: flex;
+  flex-direction: column;
+}
+/* line 367, ../sass/admin.scss */
+.content .add_new_film .field_new_film .janr_newfilm span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+}
+/* line 373, ../sass/admin.scss */
+.content .add_new_film .field_new_film .janr_newfilm .add_genre {
+  display: flex;
+  align-items: center;
+}
+/* line 376, ../sass/admin.scss */
+.content .add_new_film .field_new_film .janr_newfilm .add_genre .image_add_genre {
+  width: 33px;
+  height: 33px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* line 381, ../sass/admin.scss */
+.content .add_new_film .field_new_film .janr_newfilm .add_genre .image_add_genre:hover {
+  background: red;
+  border-radius: 20px;
+}
+/* line 386, ../sass/admin.scss */
+.content .add_new_film .field_new_film .janr_newfilm .add_genre .genre {
+  width: 515px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+}
+/* line 394, ../sass/admin.scss */
+.content .add_new_film .field_new_film .opisanie_newfilm {
+  display: flex;
+  flex-direction: column;
+}
+/* line 397, ../sass/admin.scss */
+.content .add_new_film .field_new_film .opisanie_newfilm span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+  margin-bottom: 10px;
+}
+/* line 405, ../sass/admin.scss */
+.content .add_new_film .field_new_film .kratkoe_newfilm {
+  display: flex;
+  flex-direction: column;
+}
+/* line 408, ../sass/admin.scss */
+.content .add_new_film .field_new_film .kratkoe_newfilm span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 417, ../sass/admin.scss */
+.content .add_new_film .field_new_film .img_newfilm {
+  margin-top: 10px;
+  display: flex;
+}
+/* line 420, ../sass/admin.scss */
+.content .add_new_film .field_new_film .img_newfilm .poster {
+  display: flex;
+  flex-direction: column;
+}
+/* line 423, ../sass/admin.scss */
+.content .add_new_film .field_new_film .img_newfilm .poster span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 432, ../sass/admin.scss */
+.content .add_new_film .field_new_film .img_newfilm .file_new_film {
+  display: flex;
+  flex-direction: column;
+}
+/* line 435, ../sass/admin.scss */
+.content .add_new_film .field_new_film .img_newfilm .file_new_film span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 445, ../sass/admin.scss */
+.content .add_new_film .field_new_film .link {
+  display: flex;
+  flex-direction: column;
+}
+/* line 448, ../sass/admin.scss */
+.content .add_new_film .field_new_film .link span {
+  padding-left: 9px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #292c33ad;
+  margin-top: 10px;
+}
+/* line 455, ../sass/admin.scss */
+.content .add_new_film .field_new_film .link .link_new_film {
+  width: 500px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+  padding-left: 9px;
+}
+/* line 464, ../sass/admin.scss */
+.content .add_new_film .field_new_film .btn_add_new_film {
+  height: 30px;
+  text-decoration: none;
+  padding-top: 9px;
+  background: #F44336;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 7px;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 476, ../sass/admin.scss */
+.content .add_new_film .field_new_film .btn_add_new_film:hover {
+  cursor: pointer;
+  background: red;
+}
+/* line 483, ../sass/admin.scss */
+.content .add_film {
+  display: flex;
+  flex-direction: column;
+}
+/* line 486, ../sass/admin.scss */
+.content .add_film .header_add_film {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* line 490, ../sass/admin.scss */
+.content .add_film .header_add_film .block_films {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 494, ../sass/admin.scss */
+.content .add_film .header_add_film .block_films .search_add_film {
+  width: 385px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+  padding-left: 9px;
+}
+/* line 501, ../sass/admin.scss */
+.content .add_film .header_add_film .block_films .btn_add_film {
+  width: 200px;
+  height: 36px;
+  text-decoration: none;
+  background: #F44336;
+  color: white;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 514, ../sass/admin.scss */
+.content .add_film .header_add_film .block_films .btn_add_film:hover {
+  cursor: pointer;
+  background: red;
+}
+/* line 521, ../sass/admin.scss */
+.content .add_film .content_add_film {
+  display: flex;
+  margin: 20px;
+  width: 1200px;
+  background: white;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px 0px;
+}
+/* line 528, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 534, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .title_film {
+  margin-left: 10px;
+}
+/* line 536, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .title_film span {
+  padding-left: 5px;
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 543, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .navigation_bar {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+/* line 548, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .navigation_bar .edit_films {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* line 552, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .navigation_bar .edit_films span {
+  padding-left: 5px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 558, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .navigation_bar .edit_films img {
+  width: 30px;
+  height: 30px;
+}
+/* line 563, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .navigation_bar .del_films {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+/* line 568, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .navigation_bar .del_films span {
+  padding-left: 5px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 574, ../sass/admin.scss */
+.content .add_film .content_add_film .header_content .navigation_bar .del_films img {
+  width: 30px;
+  height: 30px;
+}
+/* line 581, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* line 586, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film img {
+  width: 130px;
+  height: 200px;
+}
+/* line 590, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+/* line 594, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .year_film {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+}
+/* line 600, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .year_film p {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 609, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .country_film {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+}
+/* line 615, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .country_film p {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 624, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .genre_film {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+}
+/* line 630, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .genre_film p {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 639, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .cast_film {
+  display: flex;
+  align-items: center;
+}
+/* line 642, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .cast_film p {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 648, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .cast_film p span {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+  margin-right: 10px;
+}
+/* line 656, ../sass/admin.scss */
+.content .add_film .content_add_film .footer_add_film .inform_add_film .opisanie {
+  margin-top: 15px;
+}
+/* line 665, ../sass/admin.scss */
+.content .add_news {
+  display: flex;
+  flex-direction: column;
+}
+/* line 668, ../sass/admin.scss */
+.content .add_news .header_add_news {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* line 672, ../sass/admin.scss */
+.content .add_news .header_add_news .block_news {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 676, ../sass/admin.scss */
+.content .add_news .header_add_news .block_news .search_add_news {
+  width: 385px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+  padding-left: 9px;
+}
+/* line 683, ../sass/admin.scss */
+.content .add_news .header_add_news .block_news .btn_add_news {
+  width: 200px;
+  height: 36px;
+  text-decoration: none;
+  background: #F44336;
+  color: white;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 696, ../sass/admin.scss */
+.content .add_news .header_add_news .block_news .btn_add_news:hover {
+  cursor: pointer;
+  background: red;
+}
+/* line 703, ../sass/admin.scss */
+.content .add_news .content_add_news {
+  display: flex;
+  margin: 20px;
+  width: 1200px;
+  background: white;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px 0px;
+}
+/* line 710, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 716, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .title_news {
+  margin-left: 10px;
+}
+/* line 718, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .title_news span {
+  padding-left: 5px;
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 725, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .navigation_bar {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+/* line 730, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .navigation_bar .edit_films {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* line 734, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .navigation_bar .edit_films span {
+  padding-left: 5px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 740, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .navigation_bar .edit_films img {
+  width: 30px;
+  height: 30px;
+}
+/* line 745, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .navigation_bar .del_films {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+/* line 750, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .navigation_bar .del_films span {
+  padding-left: 5px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 756, ../sass/admin.scss */
+.content .add_news .content_add_news .header_content_news .navigation_bar .del_films img {
+  width: 30px;
+  height: 30px;
+}
+/* line 763, ../sass/admin.scss */
+.content .add_news .content_add_news .footer_add_news {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* line 768, ../sass/admin.scss */
+.content .add_news .content_add_news .footer_add_news img {
+  width: 300px;
+  height: 200px;
+}
+/* line 772, ../sass/admin.scss */
+.content .add_news .content_add_news .footer_add_news .inform_add_news {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+/* line 776, ../sass/admin.scss */
+.content .add_news .content_add_news .footer_add_news .inform_add_news .date_news {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+}
+/* line 782, ../sass/admin.scss */
+.content .add_news .content_add_news .footer_add_news .inform_add_news .date_news p {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 791, ../sass/admin.scss */
+.content .add_news .content_add_news .footer_add_news .inform_add_news .text_news {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 799, ../sass/admin.scss */
+.content .add_news .content_add_news .footer_add_news .inform_add_news .text_news span {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+  margin-bottom: 10px;
+}
+/* line 818, ../sass/admin.scss */
+.content .edit_top {
+  display: none;
+}
+/* line 825, ../sass/admin.scss */
+.content .del_user {
+  display: flex;
+  flex-direction: column;
+}
+/* line 828, ../sass/admin.scss */
+.content .del_user .header_user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* line 832, ../sass/admin.scss */
+.content .del_user .header_user .block_user {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 836, ../sass/admin.scss */
+.content .del_user .header_user .block_user .search_user {
+  width: 385px;
+  height: 30px;
+  margin: 7px;
+  font-size: 16px;
+  padding-left: 9px;
+}
+/* line 843, ../sass/admin.scss */
+.content .del_user .header_user .block_user .btn_add_user {
+  width: 200px;
+  height: 36px;
+  text-decoration: none;
+  background: #F44336;
+  color: white;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 856, ../sass/admin.scss */
+.content .del_user .header_user .block_user .btn_add_user:hover {
+  cursor: pointer;
+  background: red;
+}
+/* line 864, ../sass/admin.scss */
+.content .del_user .content_user {
+  display: flex;
+  margin: 20px;
+  width: 1200px;
+  background: white;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px 0px;
+}
+/* line 871, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px #bbbaba solid;
+}
+/* line 877, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .title_user {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+/* line 881, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .title_user .zagolovok {
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+}
+/* line 886, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .title_user .zagolovok1 {
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+}
+/* line 892, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .title_user .zagolovok2 {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #695a5a;
+}
+/* line 897, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .title_user span {
+  padding-left: 5px;
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 904, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .navigation_bar {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+/* line 909, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .navigation_bar .delete_user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+/* line 914, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .navigation_bar .delete_user span {
+  padding-left: 5px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+/* line 920, ../sass/admin.scss */
+.content .del_user .content_user .header_content_user .navigation_bar .delete_user img {
+  width: 30px;
+  height: 30px;
+}
+/* line 927, ../sass/admin.scss */
+.content .del_user .content_user .footer_user {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+/* line 931, ../sass/admin.scss */
+.content .del_user .content_user .footer_user span {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #bbbaba;
+  margin-bottom: 10px;
+}
+/* line 937, ../sass/admin.scss */
+.content .del_user .content_user .footer_user .status_user {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+/* line 943, ../sass/admin.scss */
+.content .del_user .content_user .footer_user .btn_add_status {
+  margin-top: 10px;
+  width: 200px;
+  height: 32px;
+  text-decoration: none;
+  background: #F44336;
+  color: white;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal 17px arial;
+  border-radius: 5px;
+}
+/* line 956, ../sass/admin.scss */
+.content .del_user .content_user .footer_user .btn_add_status:hover {
+  cursor: pointer;
+  background: red;
+}
