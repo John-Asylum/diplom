@@ -90,7 +90,7 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="../libs/ckeditor/ckeditor.js"> </script>
-<script type="text/javascript" src="./admin.js" ></script>
+<script type="text/javascript" src="../admin/admin.js" ></script>
 </html>
 <?php
 	else : ?>

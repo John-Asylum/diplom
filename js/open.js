@@ -320,7 +320,7 @@ $('.close_edit_playlist').click(function(){
     });
     
 
-   CKEDITOR.replace('editor1');  
-   CKEDITOR.replace('editor2');
-   CKEDITOR.replace('editor3');
+//    CKEDITOR.replace('editor1');  
+//    CKEDITOR.replace('editor2');
+//    CKEDITOR.replace('editor3');
 }); 

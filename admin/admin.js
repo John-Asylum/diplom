@@ -8,7 +8,9 @@ $('.close_floating').click(function(){
 // $( "li" ).not( document.getElementById( "notli" ) )
   // .css( "background-color", "red" );
 /////////////add_film///////////////////////
+console.log('qwe')
 $('.search_add_film').on('input',function() {
+    console.log("qwe")
     var inp_search = $('.search_add_film').val();
     inp_search = "%"+inp_search+"%";
     $.ajax({
@@ -21,15 +23,37 @@ $('.search_add_film').on('input',function() {
         
         var films = $('.content_add_film').remove();
         for(i in res) {
-            var film = $('.content_add_film');
-            film = $(film[0]).clone();
-            // var film = '<div>'+res[i].name+'</div>';
-            $(film).find('.content_add_film .title_film').html(res[i].name);
-            $(film).find('.content_add_film .opisanie').html(res[i].description);
-            // var film = `<div> 
-            //     <div class='title_film'>${res[i].name}</div>
-            // </div>`
-            console.log(res[i].name);
+            film = `
+                    <div class='content_add_film'>
+                    <div class='header_content'>
+                        <div class='title_film'>
+                            <span>${res[i].name}</span>
+                        </div>
+                        <div class='navigation_bar'>
+                            <div class='edit_films'>
+                                <img src='https://img.icons8.com/ios-glyphs/80/000000/pencil.png'>
+                                <span>edit</span>
+                            </div>
+                            <div data-id=".$r['id']." class='del_films'>
+                                <img src='https://img.icons8.com/dotty/80/000000/trash.png'>
+                                <span>delete</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='footer_add_film'>
+                        <img src="http://diplom/images/${res[i].img}">
+                        <div class='inform_add_film'>
+                            <span class='year_film'>Год: <p>${res[i].year}</p> </span>
+                            <span class='country_film'>Страна: <p>${res[i].country}</p> </span>
+                            <span class='genre_film'>Жанр: <p>${res[i].janr}</p> </span>
+                            <div class='cast_film'>
+                                <p> <span>В ролях:</span>"${res[i].actor}</p>
+                            </div>
+                            <div class='opisanie'>${res[i].description}</div>
+                        </div>
+                    </div>
+                </div>
+            `;            
             $('.add_film').append(film);
         }
     }).fail(function(err) {
