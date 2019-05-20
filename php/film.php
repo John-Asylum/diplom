@@ -66,6 +66,12 @@
 						<iframe scrolling='no' frameborder='0' width='854' height='480' webkitallowfullscreen mozallowfullscreen allowfullscreen src='http://video.meta.ua/iframe/4692525/'></iframe>
 					</div>
 				";
+				/// Нужно в бд сохранать только ссылку на ресурс, типа(http://video.meta.ua/iframe/4692525/). С низу закоменчен код который работает с ссылками.
+				// echo "
+				// 	<div class='player'>
+				// 		<iframe scrolling='no' frameborder='0' width='854' height='480' webkitallowfullscreen mozallowfullscreen allowfullscreen src='".$r['link']."'></iframe>
+				// 	</div>
+				// "
 			}
 			?>
 		  
