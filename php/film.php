@@ -51,10 +51,23 @@
 			    width="1000" height="600"
 			    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'
 			  >
-		  </video> -->
-		  <div class="player">
-		  	<iframe scrolling="no" frameborder="0" width="854" height="480" webkitallowfullscreen mozallowfullscreen allowfullscreen src="http://video.meta.ua/iframe/4692525/"></iframe>
-		  </div>
+			</video> -->
+			<?
+			if($r['film']!= null) {
+				echo "
+					<video width='854' height='480' controls='controls' style='margin: auto;margin-top: 20px; margin-bottom: 20px;'>
+						<source src='".$r['film']."' type='video/mp4'>
+					</video>
+				";
+			}
+			else {
+				echo "
+					<div class='player'>
+						<iframe scrolling='no' frameborder='0' width='854' height='480' webkitallowfullscreen mozallowfullscreen allowfullscreen src='http://video.meta.ua/iframe/4692525/'></iframe>
+					</div>
+				";
+			}
+			?>
 		  
 		 <!--  <div id="player">
 		  	
